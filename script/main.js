@@ -32,6 +32,11 @@ const updateCharityAmount = (id, address) => {
   })
 }
 
+const copy = (self) => {
+  self.parentNode.querySelector(".address").select();
+  document.execCommand("Copy");
+}
+
 const updateCharities = () => {
   updateCharityAmount("olpc", "xrb_3atqm4jgmax43pf8qhjg7cr4q9wgr1w46qtgbqz5j6kipa5ax4oa4sxmzurg");
   updateCharityAmount("rasp", "xrb_138aipaesau8yeugby4ongnn7kb8ef1ak4mbpdtxacfazpcuktruspkdcsf7");
